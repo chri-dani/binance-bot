@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+
+<body>
+    <header> Balance: {{balance}}</header>
+    <header> Position={{position}} </header>
+    <table>
+        <thead>
+            <tr>
+                <th>Key</th>
+                <th>Value</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for key, value in crypto_dict.items() %}
+            <tr>
+                <td> {{ key }} </td>
+                <td> {{ value }} </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+
+</html>
